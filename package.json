@@ -1,0 +1,23 @@
+{
+  "name": "wordle-clone",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Wordle clone — multi-agent vibe-coding learning exercise",
+  "workspaces": [
+    "packages/*",
+    "e2e"
+  ],
+  "scripts": {
+    "build": "npm run build -w @wordle/shared && npm run build -w @wordle/api && npm run build -w @wordle/web",
+    "build:shared": "npm run build -w @wordle/shared",
+    "dev:api": "npm run dev -w @wordle/api",
+    "dev:web": "npm run dev -w @wordle/web",
+    "test": "npm test -w @wordle/shared --if-present && npm test -w @wordle/api --if-present && npm test -w @wordle/web --if-present",
+    "test:api": "npm test -w @wordle/api",
+    "test:web": "npm test -w @wordle/web",
+    "e2e": "npm test -w e2e"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

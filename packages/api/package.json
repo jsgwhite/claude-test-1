@@ -1,0 +1,33 @@
+{
+  "name": "@wordle/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx src/repositories/drizzle/migrate.ts"
+  },
+  "dependencies": {
+    "@wordle/shared": "*",
+    "better-sqlite3": "^11.3.0",
+    "drizzle-orm": "^0.36.0",
+    "fastify": "^5.0.0",
+    "fastify-plugin": "^5.0.1",
+    "pino-pretty": "^11.2.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/node": "^22.7.0",
+    "drizzle-kit": "^0.28.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.3"
+  }
+}

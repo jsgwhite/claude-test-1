@@ -6,7 +6,16 @@ const config: Config = {
     './src/**/*.{ts,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        background: '#282a36',
+        foreground: '#f8f8f2',
+        primary: '#bd93f9',
+        correct: '#50fa7b',
+        present: '#f1fa8c',
+        absent: '#44475a',
+      }
+    },
   },
   plugins: [],
 };

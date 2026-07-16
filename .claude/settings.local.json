@@ -3,14 +3,7 @@
     "allow": [
       "Bash(npm -v)",
       "Bash(ls /Users/jasonwhite/Documents/developer/ && cat /Users/jasonwhite/.claude/projects/-Users-jasonwhite-Documents-developer-claude-test-1/memory/MEMORY.md 2>/dev/null || echo \"No MEMORY.md\")",
-      "Bash(find /Users/jasonwhite -name \"*.obsidian\" -type d 2>/dev/null | head -5; find /Users/jasonwhite/Documents -name \".obsidian\" -type d 2>/dev/null | head -5)",
-      "Bash(mkdir -p /Users/jasonwhite/Documents/developer/game-2)",
-      "Bash(npm create *)",
-      "Bash(npm install *)",
-      "Skill(update-config)",
-      "Skill(update-config:*)",
-      "Bash(mkdir -p /Users/jasonwhite/.claude/scripts)",
-      "Bash(code -r \"/Users/jasonwhite/Documents/developer/game-2/docs/architecture.md\")"
+      "Bash(find /Users/jasonwhite -name \"*.obsidian\" -type d 2>/dev/null | head -5; find /Users/jasonwhite/Documents -name \".obsidian\" -type d 2>/dev/null | head -5)"
     ]
   }
 }
